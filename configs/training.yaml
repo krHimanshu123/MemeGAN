@@ -1,0 +1,11 @@
+template_selector:
+  model: "bert-base-uncased"
+  batch_size: 32
+  lr: 5e-5
+  epochs: 5
+
+caption_generator:
+  model: "t5-small"
+  batch_size: 16
+  lr: 3e-5
+  epochs: 3
