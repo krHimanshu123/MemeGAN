@@ -3,3 +3,4 @@ uvicorn[standard]
 pillow
 transformers
 torch
+requests
