@@ -13,6 +13,7 @@ def fetch_templates():
     r.raise_for_status()
     payload = r.json()
     if not payload.get("success"):
+        
         print("Imgflip API returned failure:", payload)
         sys.exit(1)
     memes = payload["data"]["memes"]
