@@ -31,6 +31,7 @@ def run_inference(sentence,
     caption_model.load(caption_generator_dir)
     caption = caption_model.generate(sentence)
 
+                    
     # Step 3: Overlay caption on image
     output_path = os.path.join(output_dir, f"meme_{template_name}.jpg")
     add_caption(template_path, caption, output_path)
