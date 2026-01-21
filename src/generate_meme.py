@@ -66,6 +66,7 @@ def overlay_text(image, top_text, bottom_text):
 
     try:
         font = ImageFont.truetype("impact.ttf", FONT_SIZE)
+        
     except:
         font = ImageFont.truetype(FONT_PATH, FONT_SIZE)
 
