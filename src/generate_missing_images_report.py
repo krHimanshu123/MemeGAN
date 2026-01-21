@@ -9,6 +9,7 @@ with open("missing_images_report.txt", "w", encoding="utf-8") as report:
         for i, line in enumerate(f):
             if not line.strip():
                 continue
+                
             try:
                 sample = json.loads(line)
                 if not sample.get("img_path") or not os.path.exists(sample.get("img_path", "")):
